@@ -1,5 +1,5 @@
 ﻿# ForgeLens: Data-Efficient Forgery Focus for Generalizable Forgery Image Detection [ICCV 2025]
-[![Static Badge](https://img.shields.io/badge/2408.13697-red?style=flat&logo=arxiv&logoColor=%23B31B1B&label=Arxiv&labelColor=%23FFFFFF&color=%23B31B1B&link=https%3A%2F%2Farxiv.org%2Fpdf%2F2408.13697)](https://arxiv.org/abs/2502.16514)
+[![Static Badge](https://img.shields.io/badge/2408.13697-red?style=flat&logo=arxiv&logoColor=%23B31B1B&label=Arxiv&labelColor=%23FFFFFF&color=%23B31B1B&link=https%3A%2F%2Farxiv.org%2Fpdf%2F2408.13697)](https://arxiv.org/abs/2408.13697)
 
 **ForgeLens** is a data-efficient, feature-guided CLIP-ViT framework for detecting AI-generated images with strong generalization to unseen forgery techniques. It guides the frozen CLIP-ViT to focus on forgery-relevant information within the general-purpose features it extracts, addressing a key limitation of prior frozen-network-based methods, which often retain excessive forgery-irrelevant content. ForgeLens introduces two simple and lightweight modules—WSGM and FAFormer—to guide the model’s attention toward forgery-specific cues. With only 1% of the training data, ForgeLens outperforms existing forgery detection methods.
 
