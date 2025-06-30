@@ -55,7 +55,7 @@ Training/
 
 ### Evaluation Set
 
-Our method is evaluated on ***UniversalFakeDetect***, using the same class-wise folder structure as the training set.  
+Our method is evaluated on ***UniversalFakeDetect***, using the same folder structure as the training set.  
 
 ## 🛠️ Configuration
 You can manage the hyperparameters in ``./options/options.py``.
