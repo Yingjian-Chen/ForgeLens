@@ -1,5 +1,5 @@
 ﻿# ForgeLens: Data-Efficient Forgery Focus for Generalizable Forgery Image Detection [ICCV 2025]
-[![Static Badge](https://img.shields.io/badge/2408.13697-red?style=flat&logo=arxiv&logoColor=%23B31B1B&label=Arxiv&labelColor=%23FFFFFF&color=%23B31B1B&link=https%3A%2F%2Farxiv.org%2Fpdf%2F2408.13697)](https://arxiv.org/abs/2502.16514)
+[![Static Badge](https://img.shields.io/badge/2408.13697-red?style=flat&logo=arxiv&logoColor=%23B31B1B&label=Arxiv&labelColor=%23FFFFFF&color=%23B31B1B&link=https%3A%2F%2Farxiv.org%2Fpdf%2F2408.13697)](https://arxiv.org/abs/2408.13697)
 
 **ForgeLens** is a data-efficient, feature-guided CLIP-ViT framework for detecting AI-generated images with strong generalization to unseen forgery techniques. It guides the frozen CLIP-ViT to focus on forgery-relevant information within the general-purpose features it extracts, addressing a key limitation of prior frozen-network-based methods, which often retain excessive forgery-irrelevant content. ForgeLens introduces two simple and lightweight modules—WSGM and FAFormer—to guide the model’s attention toward forgery-specific cues. With only 1% of the training data, ForgeLens outperforms existing forgery detection methods.
 
@@ -55,7 +55,7 @@ Training/
 
 ### Evaluation Set
 
-Our method is evaluated on ***UniversalFakeDetect***, using the same class-wise folder structure as the training set.  
+Our method is evaluated on ***UniversalFakeDetect***, using the same folder structure as the training set.  
 
 ## 🛠️ Configuration
 You can manage the hyperparameters in ``./options/options.py``.
@@ -80,3 +80,35 @@ We provide pretrained weights corresponding to the results reported in our paper
 To reproduce the results of `Table 1` and `Table 2` in our paper, first download the pretrained weights, then run the evaluation script as follows:
 ```bash
 bash evaluate.sh
+```
+
+## 🔄 Update (2025-09-15): Evaluation on GenImage  
+
+### 1. Dataset Download  
+Download the **GenImage dataset** from the [official source](https://genimage-dataset.github.io/) or download [our pre-split dataset](https://pan.baidu.com/s/19MIJccFZiHGIIsF18Rozkw?pwd=895s).
+
+### 2. Quick Evaluation with Our Provided Checkpoint 
+First download the pretrained weights from [Google Drive](https://drive.google.com/file/d/1ZGmFPDJFtiJBxe3_mQGP_ZKPO_XXzjWc/view?usp=sharing) of [Baidu Netdisk](https://pan.baidu.com/s/1H50DjdnnnfDJqn8O75sa4g?pwd=sv35), then run the evaluation script as follows:
+```bash
+bash evaluate_GenImage.sh
+```
+
+### 3. Training
+You can perform training using the following command:
+```
+bash train_GenImage.sh
+```
+## 📌 Citation
+
+If you find our project helpful, please feel free to leave a ⭐ and cite our paper:
+
+```bibtex
+@misc{chen2025forgelensdataefficientforgeryfocus,
+      title={ForgeLens: Data-Efficient Forgery Focus for Generalizable Forgery Image Detection}, 
+      author={Yingjian Chen and Lei Zhang and Yakun Niu},
+      year={2025},
+      eprint={2408.13697},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2408.13697}, 
+}
