@@ -46,6 +46,11 @@ class Options():
         parser.add_argument('--batch_size', type=int, default=16)
         parser.add_argument('--eval_data_root', default='')
 
+        # inference setting
+        parser.add_argument('--input_dir', default='')
+        parser.add_argument('--output_dir', default='')
+
+
         return parser
 
     def parse(self):
