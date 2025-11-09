@@ -103,12 +103,11 @@ bash train_GenImage.sh
 If you find our project helpful, please feel free to leave a ⭐ and cite our paper:
 
 ```bibtex
-@misc{chen2025forgelensdataefficientforgeryfocus,
-      title={ForgeLens: Data-Efficient Forgery Focus for Generalizable Forgery Image Detection}, 
-      author={Yingjian Chen and Lei Zhang and Yakun Niu},
-      year={2025},
-      eprint={2408.13697},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV},
-      url={https://arxiv.org/abs/2408.13697}, 
+@InProceedings{Chen_2025_ICCV,
+    author    = {Chen, Yingjian and Zhang, Lei and Niu, Yakun},
+    title     = {ForgeLens: Data-Efficient Forgery Focus for Generalizable Forgery Image Detection},
+    booktitle = {Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)},
+    month     = {October},
+    year      = {2025},
+    pages     = {16270-16280}
 }
